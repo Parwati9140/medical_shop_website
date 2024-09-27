@@ -7,7 +7,7 @@ const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
 
     const toggleMenu = () => {
-        setIsOpen(!isOpen); // Toggle the state of isOpen between true and false
+        setIsOpen(!isOpen); 
     };
 
     return (
@@ -17,9 +17,9 @@ const Navbar = () => {
                     <img src="/images/logo.png" alt="Logo" />
                 </div>
 
-                {/* Burger icon for small screens */}
+          
                 <div className="burger-icon" onClick={toggleMenu}>
-                    {isOpen ? <FaTimes /> : <FaBars />} {/* Toggle between bars and times icons */}
+                    {isOpen ? <FaTimes /> : <FaBars />} 
                 </div>
 
                 {/* Nav links */}

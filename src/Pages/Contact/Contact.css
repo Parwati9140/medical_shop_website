@@ -4,7 +4,7 @@
     background-color: rgba(216, 238, 247, 0.945);
   }
   
-  /* Flexbox layout for the form and the address/map section */
+
   .contact-rows {
     display: flex;
     justify-content: space-between;
@@ -27,7 +27,7 @@
   .contact-forms {
     display: flex;
     flex-direction: column;
-    gap: 10px; /* Space between form elements */
+    gap: 10px; 
   }
   
   .contact-forms h3 {
@@ -79,7 +79,7 @@
     border: none;
   }
   
-  /* Responsive behavior for smaller screens */
+ 
   @media (max-width: 768px) {
     .contact-row {
       flex-direction: column;
