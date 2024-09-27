@@ -1,0 +1,65 @@
+/* Basic styling for the section */
+.direct-desk {
+    background-color: #f9f9f9;
+    padding: 60px;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+  }
+  
+  .direct-text {
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  /* Style for the heading */
+  .direct-text h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #2c3e50;
+    font-weight: bold;
+  }
+  .direct-image img{
+    width: 100%;
+    height: auto;
+    max-width: 500px;
+    object-fit: contain;
+    margin-right: 80px;
+  }
+  /* Style for the paragraphs */
+  .direct-text p {
+    font-size: 1.1rem;
+    color: #7f8c8d;
+    margin-bottom: 20px;
+  }
+  
+  /* Responsive design for tablets */
+  @media (max-width: 768px) {
+    .direct-text h2 {
+      font-size: 2rem;
+    }
+  
+    .direct-text p {
+      font-size: 1rem;
+    }
+  
+    .direct-desk {
+      padding: 30px;
+    }
+  }
+  
+  /* Responsive design for mobile */
+  @media (max-width: 480px) {
+    .direct-text h2 {
+      font-size: 1.5rem;
+    }
+  
+    .direct-text p {
+      font-size: 0.9rem;
+    }
+  
+    .direct-desk {
+      padding: 20px;
+    }
+  }
+  

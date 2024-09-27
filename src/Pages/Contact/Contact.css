@@ -1,0 +1,88 @@
+/* General container styling */
+.contact-sections {
+    padding: 40px;
+    background-color: rgba(216, 238, 247, 0.945);
+  }
+  
+  /* Flexbox layout for the form and the address/map section */
+  .contact-rows {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 40px;
+  }
+  .contact-image img{
+    width: 100%;
+    height: auto;
+    max-width: 390px;
+    object-fit: contain;
+    margin-right: 90px;
+  margin-top: 125px;
+  }
+  /* Contact Form */
+  .contact-form-wrappers {
+    flex: 1;
+  }
+  
+  .contact-forms {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Space between form elements */
+  }
+  
+  .contact-forms h3 {
+    margin-bottom: 20px;
+  }
+  
+  .contact-forms input,
+  .contact-forms textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .submit-btn {
+    background-color: #ffcc00;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1rem;
+  }
+  
+  /* Contact Details and Map */
+  .contact-details-wrappers {
+    flex: 1;
+  }
+  
+  .contact-details {
+    margin-bottom: 20px;
+  }
+  
+  .contact-infos {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .contact-infos svg {
+    margin-right: 10px;
+    color: #ffcc00;
+  }
+  
+  /* Map Styling */
+  .map iframe {
+    width: 100%;
+    height: 300px;
+    border-radius: 8px;
+    border: none;
+  }
+  
+  /* Responsive behavior for smaller screens */
+  @media (max-width: 768px) {
+    .contact-row {
+      flex-direction: column;
+    }
+  }
+  

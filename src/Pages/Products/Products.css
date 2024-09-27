@@ -1,0 +1,37 @@
+.product-gallery-container{
+  background: rgb(207, 229, 238);
+  padding: 20px; 
+    text-align: center;
+
+}
+.product-grid {
+  display: grid; /* Use CSS Grid for layout */
+  grid-template-columns: repeat(auto-fill, minmax(300px, 3fr)); /* Responsive grid */
+  gap: 15px;
+  }
+  
+  .product-card1 {
+    width: 350px;
+    height: 300px;
+    text-align: center;
+    background: linear-gradient(to bottom, #e9e5c0, #bae8fa);
+    padding: 5px;
+    display: flex; /* Enables flexbox */
+    justify-content: center; /* Centers image horizontally */
+    align-items: center; 
+
+  }
+
+
+
+  
+@media (max-width: 768px) {
+  .hero-section {
+      flex-direction: column; /* Stack hero section elements */
+      align-items: center; /* Center align items */
+  }
+
+  .hero-text h1 {
+      font-size: 2rem; /* Adjust heading size */
+  }
+}
