@@ -22,7 +22,7 @@ const Career = () => {
         const handleSubmit = (e) => {
           e.preventDefault();
           console.log(formData);
-          // Add form submission logic here
+          
         };
       
   return (
@@ -75,7 +75,7 @@ const Career = () => {
   <div className="container1">
     <div className="career-header"><h3>COME JOIN US</h3>
     <h2>Career Openings<hr/></h2>
-    <p>We're always looking for creative, talented self-starters to join the JMC family. Check out our open roles below and fill out an application.</p></div>
+    <p>We're always looking for creative, talented self-starters to join the Locanic family.</p></div>
     <div className="form-image-wrapper">
       <form className="career-form" onSubmit={handleSubmit}>
         <input
@@ -92,11 +92,18 @@ const Career = () => {
           value={formData.email}
           onChange={handleChange}
         />
-        <input
+         <input
           type="text"
-          name="address"
-          placeholder="Enter address"
-          value={formData.address}
+          name="phone"
+          placeholder="Enter phone no."
+          value={formData.phone}
+          onChange={handleChange}
+        />
+        <textarea
+          type="text"
+          name="text"
+          placeholder="Enter some text"
+          value={formData.text}
           onChange={handleChange}
         />
         <button type="submit" className="submit-btn">Submit</button>
