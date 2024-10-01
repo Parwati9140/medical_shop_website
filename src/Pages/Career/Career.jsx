@@ -18,12 +18,6 @@ const Career = () => {
           });
         };
       
-        const handleFileChange = (e) => {
-          setFormData({
-            ...formData,
-            jobCv: e.target.files[0],
-          });
-        };
       
         const handleSubmit = (e) => {
           e.preventDefault();
@@ -46,7 +40,7 @@ const Career = () => {
     </div>
   </div>
 </section>
-    <section className="benefits-section">
+   {/*<section className="benefits-section">
       <div className="container1">
         <div className="benefits-text">
           <h3>BENEFITS</h3>
@@ -76,7 +70,7 @@ const Career = () => {
           </div>
         </div>
       </div>
-    </section>
+    </section>*/}
     <section className="career-openings">
   <div className="container1">
     <div className="career-header"><h3>COME JOIN US</h3>
@@ -104,11 +98,6 @@ const Career = () => {
           placeholder="Enter address"
           value={formData.address}
           onChange={handleChange}
-        />
-        <input
-          type="file"
-          name="jobCv"
-          onChange={handleFileChange}
         />
         <button type="submit" className="submit-btn">Submit</button>
       </form>

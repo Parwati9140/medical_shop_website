@@ -110,6 +110,14 @@ hr {
 .hero-images img {
   width: 100%;
   height: auto;
+  max-width: 710px;
+  object-fit: contain;
+  margin-right: 70px;
+margin-top: 125px;
+}
+.hero-images1 img {
+  width: 100%;
+  height: auto;
   max-width: 550px;
   object-fit: contain;
   margin-right: 70px;

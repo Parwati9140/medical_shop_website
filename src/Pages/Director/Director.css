@@ -1,65 +1,99 @@
-/* Basic styling for the section */
+.hero-section {
+  position: relative;
+  background-color: #f5f5f5;
+  padding: 50px 20px;
+  text-align: center;
+  animation: fadeInUp 1.5s ease-in-out;
+}
+
+.hero-text {
+  animation: fadeInUp 1.5s ease-in-out;
+}
+
+.direct-image {
+  animation: fadeInUp 1.5s ease-in-out;
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.btn-primary {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color:#087cf9 ;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+}
+
 .direct-desk {
-    background-color: #f9f9f9;
-    padding: 60px;
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+  background: linear-gradient(135deg,#cfe2ff,#c4cad1);
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.direct-card {
+  background-color: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+  max-width: 800px;
+  animation-duration: 1.5s;
+}
+
+.direct-text h2 {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.direct-text h2::after {
+  content: '';
+  display: block;
+  width: 80px;
+  height: 3px;
+  background-color: #007bff;
+  margin: 10px auto;
+}
+
+.direct-text p {
+  font-size: 1.1rem;
+  color: #555;
+  line-height: 1.8;
+}
+
+
+
+@keyframes fadeInUp {
+  0% {
+      opacity: 0;
+      transform: translateY(20px);
   }
-  
-  .direct-text {
-    max-width: 1000px;
-    margin: 0 auto;
-    text-align: center;
+  100% {
+      opacity: 1;
+      transform: translateY(0);
   }
-  
-  /* Style for the heading */
-  .direct-text h2 {
-    font-size: 2rem;
-    margin-bottom: 20px;
-    color: #2c3e50;
-    font-weight: bold;
-  }
-  .direct-image img{
-    width: 100%;
-    height: auto;
-    max-width: 500px;
-    object-fit: contain;
-    margin-right: 80px;
-  }
-  /* Style for the paragraphs */
-  .direct-text p {
-    font-size: 1.1rem;
-    color: #7f8c8d;
-    margin-bottom: 20px;
-  }
-  
-  /* Responsive design for tablets */
-  @media (max-width: 768px) {
-    .direct-text h2 {
-      font-size: 2rem;
-    }
-  
-    .direct-text p {
-      font-size: 1rem;
-    }
-  
-    .direct-desk {
-      padding: 30px;
-    }
-  }
-  
-  /* Responsive design for mobile */
-  @media (max-width: 480px) {
-    .direct-text h2 {
-      font-size: 1.5rem;
-    }
-  
-    .direct-text p {
-      font-size: 0.9rem;
-    }
-  
-    .direct-desk {
-      padding: 20px;
-    }
-  }
-  
+}
+
+.animate__fadeInUp {
+  animation: fadeInUp 1.5s ease-in-out;
+}
+

@@ -7,7 +7,7 @@ const Footer = () => {
         <footer className="footer" id="contact">
         <Container>
           <Row>
-            <Col md={3} className="company-info">
+            <Col md={2} className="company-info">
               <img src="/images/logo.png" alt="Company Logo" className="footer-logo" /></Col>
               <Col md={3} >
               <h4>Company</h4>
@@ -21,11 +21,12 @@ const Footer = () => {
               <p>Shop</p>
               <p>Contact Us</p>
             </Col>
-            <Col md={3} className="contact-info">
+            <Col md={4} className="contact-info">
               <h4>Address</h4>
-              <p>1234 Street Name, City, Country</p>
-              <p>Email: contact@company.com</p>
-              <p>Phone: +123456789</p>
+              <p> No 30/1, 2nd Main Road, Chinnapa garden, Bangalore 560046.</p>
+              <p>Email: laconicpharmapl@gmail.com</p>
+              <p>Phone: +91 85533 42365</p>
+              <p>Whatsapp: +91 85533 42365</p>
               <h4>Follow Us</h4>
               <div className="social-links">
                 <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">

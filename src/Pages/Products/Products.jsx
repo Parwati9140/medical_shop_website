@@ -25,7 +25,7 @@ const Products = () => {
     <p>Explore our wide range of pharmaceutical products designed for better healt</p>
 
     </div>
-    <div className="hero-images">
+    <div className="hero-images1">
       <img src="/images/product1.png" alt="Healthcare Solutions" />
     </div>
   </div>
